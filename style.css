@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(136, 4, 4);
+    width: 100vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    margin: 50px;
+    font-family: 'Super Cosmic', 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+
+#theater {
+    background-image: url(images/theater.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+
+/* icoontjes */
+.icoontjes img {
+    background-color: antiquewhite;
+    border-radius: 15%;
+    border: solid 3px;
+    border-color: black;
+    min-width: max-content;
+    padding: 5px;
+    margin: 20px 50px;
+}
+
+.icoontjes {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 70%;
+    margin-top: 8%;
+}
+
+/* band icoontjes */
+.icoonverwisselen {
+    opacity: 60%;
+}
+
+
+/* band */
+.geklikt {
+    display: none;
+}
+
+#aap {
+    position: absolute;
+    top: 460px;
+    left: 800px;
+}
+
+
+#kikker {
+    position: absolute;
+    top: 570px;
+    left: 880px;
+}
+
+#vogel {
+    position: absolute;
+    top: 490px;
+    left: 730px;
+}
+
+#kat {
+    position: absolute;
+    top: 495px;
+    left: 600px;
+}
+
+
+/* vraagteken icoontje */
+#random {
+    background-color: antiquewhite;
+    border-radius: 15%;
+    border: solid 3px;
+    border-color: black;
+    margin: 20px 50px;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    position: absolute;
+    top: 850px;
+    left: 730px;
+    animation: bounce 0.7s alternate infinite;
+}
+
+@keyframes bounce { 
+    from { 
+        transform: translate3d(0, 0, 0); 
+    } 
+    to { 
+        transform: translate3d(0, 30px, 0); 
+    } 
+} 
+
+
+/* secret */
+#secret {
+    background-image: url(images/disco.jpeg); /* https://www.pinterest.com/pin/concert-stage-wallpaper--694680311279007757/ */
+    background-size: cover;
+    background-color: rgb(37, 1, 70);
+}
+
+#secret h1 {
+    font-family: Party, 'Courier New', Courier, monospace;
+    color: aliceblue;
+    margin: 0;
+    font-size: 70px;
+}
+
+#zingendeNienkes {
+    max-width: 30%;
+    margin: auto;
+    margin-top: 320px;
+}
+
+#justifybutton {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+#terug {
+    color: aliceblue;
+    background-color: rgb(37, 1, 70);
+    padding: 10px;
+    border-radius: 15px;
+    border-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 50px;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Super Cosmic';
+    src: url(fonts/super_cosmic/Super\ Cosmic\ Personal\ Use.ttf);
+    font-family: Party;
+    src: url(fonts/Party\ Letters\ On\ a\ Rope.otf);
+}
