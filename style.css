@@ -177,6 +177,7 @@ h1 {
     max-width: 30%;
     margin: auto;
     margin-top: 200px;
+    cursor: pointer;
 }
 
 #justifybutton {

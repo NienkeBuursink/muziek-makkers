@@ -1,4 +1,21 @@
-const terugButton = document.querySelector("#terug");
+// audio
+const audio = document.getElementById("audioNienke")
+const plaatje = document.getElementById("NienkesDieZingen")
+
+function audioSpelen(){
+    audio.play();
+}
+
+function audioStoppen(){
+    audio.pause();
+}
+
+plaatje.addEventListener("click", audioSpelen);
+plaatje.addEventListener("mouseover", audioSpelen);
+plaatje.addEventListener("mouseout", audioStoppen);
+
+// button
+const terugButton = document.querySelector("button");
 
 function startAftellen(tijdInSecondes){
     seconden = tijdInSecondes;
