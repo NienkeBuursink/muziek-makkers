@@ -14,9 +14,12 @@ plaatje.addEventListener("click", audioSpelen);
 plaatje.addEventListener("mouseover", audioSpelen);
 plaatje.addEventListener("mouseout", audioStoppen);
 
+
 // button
+// Voorbeeld van Erik van hoe het eruit moet zien
 const terugButton = document.querySelector("button");
 
+// Deze functie heeft docent een voorbeeld van laten zien
 function startAftellen(tijdInSecondes){
     seconden = tijdInSecondes;
 
