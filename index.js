@@ -8,7 +8,7 @@ const vogelIcoon = document.querySelector("#vogelIcoon");
 const mauw = document.querySelector("#kat");
 const katIcoon = document.querySelector("#katIcoon");
 const random = document.querySelector("#random");
-const koffiepauzeKnop = document.querySelector("#koffiepauze")
+const koffiepauzeKnop = document.querySelector("#koffiepauze");
 
 
 // audio's
@@ -93,13 +93,13 @@ function koffiepauze(){
         audioUitKat();
         audioUitKikker();
         audioUitVogel();
-    })
+    });
 }
 
 function icoonresetten(){
     diericonen.forEach((diericoon) => {
         diericoon.classList.add("icoonverwisselen");
-    })
+    });
 }
 
 function knopverwijderen(){

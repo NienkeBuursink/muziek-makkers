@@ -1,6 +1,6 @@
 // audio
-const audio = document.getElementById("audioNienke")
-const plaatje = document.getElementById("NienkesDieZingen")
+const audio = document.getElementById("audioNienke");
+const plaatje = document.getElementById("NienkesDieZingen");
 
 function audioSpelen(){
     audio.play();
@@ -31,14 +31,14 @@ function startAftellen(tijdInSecondes){
             clearInterval(timer);
             naarHome();
         }
-    }, 1000)
+    }, 1000);
 }
 function naarHome(){
     window.location.href = 'index.html';
 }
 
 function terugKlikken(){
-    startAftellen(6)
+    startAftellen(6);
 }
 
 terugButton.addEventListener("click", terugKlikken);
