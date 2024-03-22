@@ -19,7 +19,6 @@ plaatje.addEventListener("mouseout", audioStoppen);
 // Voorbeeld van Erik van hoe het eruit moet zien
 const terugButton = document.querySelector("button");
 
-// Deze functie heeft docent een voorbeeld van laten zien
 function startAftellen(tijdInSecondes){
     seconden = tijdInSecondes;
 
